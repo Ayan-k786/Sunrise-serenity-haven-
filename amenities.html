@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Amenities | Sunrise Serenity Haven</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FIXED POPUP CSS (यह कोड काम सुनिश्चित करेगा) -->
+    <style>
+        .card {
+            cursor: pointer !important;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Modal Overlay - Fixes screen display issue */
+        #detailModal {
+            display: none;
+            position: fixed !important;
+            top: 0 !important;
+            left: 0 !important;
+            width: 100vw !important;
+            height: 100vh !important;
+            background: rgba(0, 0, 0, 0.75) !important;
+            z-index: 99999 !important;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-box {
+            background: #ffffff !important;
+            width: 90%;
+            max-width: 450px;
+            padding: 24px;
+            border-radius: 12px;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            text-align: left;
+            margin: auto;
+        }
+
+        .modal-box img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .modal-box h3 {
+            margin: 0 0 10px 0;
+            color: #1a202c;
+            font-size: 20px;
+        }
+
+        .modal-box p {
+            color: #4a5568;
+            line-height: 1.5;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+            color: #666;
+            line-height: 1;
+        }
+
+        .close-btn:hover {
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="page-hero">
+        <div class="nav">
+            <div class="container nav-inner">
+                <a class="logo" href="index.html">
+                    SUNRISE SERENITY HAVEN
+                    <small>LUXURY PRIVATE VILLA · LONAVALA</small>
+                </a>
+                <div class="menu">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="amenities.html" class="active">Amenities</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="plans.html">Stay Plans</a>
+                    <a href="reviews.html">Reviews</a>
+                    <a href="contact.html">Contact</a>
+                    <a class="btn" href="contact.html">Book Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h2>Amenities</h2>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-head">
+                <div>
+                    <div class="eyebrow">Amenities</div>
+                    <h2>Stay. Play. Unwind.</h2>
+                </div>
+                <p>Click on any amenity card to view photos and full details.</p>
+            </div>
+
+            <!-- ALL CARDS -->
+            <div class="cards">
+
+                <!-- 1. Swimming Pool -->
+                <div class="card" onclick="openDetailModal('Swimming Pool & Jacuzzi', 'assets/13.jpeg', 'Private swimming pool featuring a shallow Kids Pool Tub, Jacuzzi setup, and comfortable poolside seating area for group leisure.')">
+                    <div class="icon">🏊</div>
+                    <h3>Swimming Pool</h3>
+                    <p>Private pool & kids tub.</p>
+                </div>
+
+                <!-- 2. Bedrooms -->
+                <div class="card" onclick="openDetailModal('4 Bedrooms', 'assets/08.jpg', '4 large spacious AC bedrooms with attached western bathrooms, premium wooden flooring, and capacity for up to 20 guests.')">
+                    <div class="icon">🛏</div>
+                    <h3>4 Bedrooms</h3>
+                    <p>Comfortable private sleeping spaces for your group.</p>
+                </div>
+
+                <!-- 3. Nearby Sightseeing -->
+                <div class="card" onclick="openDetailModal('Nearby Sightseeing', 'assets/NS1.jpeg', 'Close to top Lonavala attractions including Tungarli Dam, Bhushi Dam, Tiger Point, Rajmachi Point, and Della Adventure Park.')">
+                    <div class="icon">🗺️</div>
+                    <h3>Nearby Sightseeing</h3>
+                    <p>Discover Lonavala’s best spots nearby.</p>
+                </div>
+
+                <!-- 4. BBQ Area -->
+                <div class="card" onclick="openDetailModal('BBQ & Bonfire', 'assets/bbq.webp', 'Easy-to-use Barbeque setup for delicious grilled food along with a dedicated outdoor bonfire setup area for chilly evenings.')">
+                    <div class="icon">🔥</div>
+                    <h3>BBQ Area</h3>
+                    <p>Enjoy outdoor BBQ moments with your group.</p>
+                </div>
+
+                <!-- 5. Indoor Games -->
+                <div class="card" onclick="openDetailModal('Indoor Games', 'assets/games.jpg', 'Equipped with a full-size Pool Table, Carrom, Chess Board, Cards, Table Tennis, and outdoor team activity options.')">
+                    <div class="icon">🎮</div>
+                    <h3>Indoor Games</h3>
+                    <p>Fun options for friends and family.</p>
+                </div>
+
+                <!-- 6. Smart TV -->
+                <div class="card" onclick="openDetailModal('55 Smart TV', 'assets/TV.jpeg', '55 inch Smart LED TV in the main area with active Netflix subscription and OTT recharge for movie nights.')">
+                    <div class="icon">📺</div>
+                    <h3>Smart TV</h3>
+                    <p>Relax with entertainment after a day out.</p>
+                </div>
+
+                <!-- 7. Wi-Fi -->
+                <div class="card" onclick="openDetailModal('High Speed Wi-Fi', 'assets/wifi1.jpeg', 'Uninterrupted 100+ Mbps high-speed internet access available across all bedrooms and hall areas.')">
+                    <div class="icon">📶</div>
+                    <h3>Wi-Fi</h3>
+                    <p>Stay connected when you need to.</p>
+                </div>
+
+                <!-- 8. Parking -->
+                <div class="card" onclick="openDetailModal('Private Parking', 'assets/parking1.jpeg', 'Secure on-property parking space capable of fitting 3+ light motor vehicles with EV charging facility.')">
+                    <div class="icon">🚗</div>
+                    <h3>Parking</h3>
+                    <p>Convenient on-property parking space.</p>
+                </div>
+
+                <!-- 9. Garden -->
+                <div class="card" onclick="openDetailModal('Garden & Swing', 'assets/green.jpeg', 'Lush green surroundings with outdoor seating, a traditional hanging swing (Jhula), and a Pop-Up Gazebo Tent.')">
+                    <div class="icon">🌿</div>
+                    <h3>Garden</h3>
+                    <p>Green outdoor surroundings for slow mornings.</p>
+                </div>
+
+                <!-- 10. Music -->
+                <div class="card" onclick="openDetailModal('Bluetooth Music System', 'assets/sound.jpeg', 'High-power Bluetooth speaker with microphone and DJ music options to celebrate events and get-togethers.')">
+                    <div class="icon">🎵</div>
+                    <h3>Music</h3>
+                    <p>Set the mood for celebrations and get-togethers.</p>
+                </div>
+
+                <!-- 11. Kitchen -->
+                <div class="card" onclick="openDetailModal('Furnished Kitchen', 'assets/DSC05203.jpg', 'Fully equipped big kitchen space with Refrigerator, Aquaguard water purifier, and basic cooking essentials.')">
+                    <div class="icon">🍳</div>
+                    <h3>Kitchen</h3>
+                    <p>Useful kitchen setup for group stays.</p>
+                </div>
+
+                <!-- 12. Green Views -->
+                <div class="card" onclick="openDetailModal('Green Views & Terrace', 'assets/green view.jpeg', 'Enjoy picturesque valley and mountain views from the private open terrace and balcony spaces.')">
+                    <div class="icon">🌄</div>
+                    <h3>Green Views</h3>
+                    <p>Enjoy the lush hills and peaceful surroundings.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- POPUP MODAL -->
+    <div id="detailModal" onclick="closeDetailModal()">
+        <div class="modal-box" onclick="event.stopPropagation()">
+            <span class="close-btn" onclick="closeDetailModal()">&times;</span>
+            <img id="modalImg" src="" alt="Amenity Image">
+            <h3 id="modalTitle"></h3>
+            <p id="modalInfo"></p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h3>SUNRISE SERENITY HAVEN</h3>
+                <p>A private luxury villa designed for memorable family holidays, celebrations, friends and group getaways in Lonavala.</p>
+            </div>
+            <div>
+                <h3>Explore</h3>
+                <p>
+                    <a href="about.html">About Us</a><br>
+                    <a href="amenities.html">Amenities</a><br>
+                    <a href="gallery.html">Gallery</a><br>
+                    <a href="plans.html">Stay Plans</a>
+                </p>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <p>Bungalow No. 16, Sunrise Presidio,<br>Gold Valley Sector D, Tungarli,<br>Lonavala, Pune – 410401</p>
+                <p style="margin-top:10px">+91 97676 87687</p>
+            </div>
+        </div>
+        <div class="container copyright">
+            © 2026 Sunrise Serenity Haven. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- JS CODE INCLUDED DIRECTLY -->
+    <script>
+        function openDetailModal(title, imageSrc, infoText) {
+            document.getElementById('modalTitle').innerText = title;
+            document.getElementById('modalImg').src = imageSrc;
+            document.getElementById('modalInfo').innerText = infoText;
+            
+            document.getElementById('detailModal').style.display = 'flex';
+        }
+
+        function closeDetailModal() {
+            document.getElementById('detailModal').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>
