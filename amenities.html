@@ -88,131 +88,135 @@
 
 <body>
 
-    <section class="page-hero">
-        <div class="nav">
-            <div class="container nav-inner">
-                 <a class="logo" href="index.html">
-                 <img src="assets/logo.png"
-                         alt="Sunrise Serenity Haven">
-                </a>
-                <div class="menu">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="amenities.html" class="active">Amenities</a>
-                    <a href="gallery.html">Gallery</a>
-                    <a href="plans.html">Stay Plans</a>
-                    <a href="reviews.html">Reviews</a>
-                    <a href="contact.html">Contact</a>
-                    <a class="btn" href="contact.html">Book Now</a>
+    <main>
+
+        <section class="page-hero">
+            <div class="nav">
+                <div class="container nav-inner">
+                     <a class="logo" href="index.html">
+                     <img src="assets/logo.png"
+                             alt="Sunrise Serenity Haven">
+                    </a>
+                    <div class="menu">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="amenities.html" class="active">Amenities</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="plans.html">Stay Plans</a>
+                        <a href="reviews.html">Reviews</a>
+                        <a href="contact.html">Contact</a>
+                        <a class="btn" href="contact.html">Book Now</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div>
-            <h2>Amenities</h2>
-        </div>
-    </section>
-
-    <section class="section">
-        <div class="container">
-            <div class="section-head">
-                <div>
-                    <div class="eyebrow">Amenities</div>
-                    <h2>Stay. Play. Unwind.</h2>
-                </div>
-                <p>Click on any amenity card to view photos and full details.</p>
+            <div>
+                <h2>Amenities</h2>
             </div>
+        </section>
 
-            <!-- ALL CARDS -->
-            <div class="cards">
-
-                <!-- 1. Swimming Pool -->
-                <div class="card" onclick="openDetailModal('Swimming Pool & Jacuzzi', 'assets/13.jpeg', 'Private swimming pool featuring a shallow Kids Pool Tub, Jacuzzi setup, and comfortable poolside seating area for group leisure.')">
-                    <div class="icon">🏊</div>
-                    <h3>Swimming Pool</h3>
-                    <p>Private pool & kids tub.</p>
+        <section class="section">
+            <div class="container">
+                <div class="section-head">
+                    <div>
+                        <div class="eyebrow">Amenities</div>
+                        <h2>Stay. Play. Unwind.</h2>
+                    </div>
+                    <p>Click on any amenity card to view photos and full details.</p>
                 </div>
 
-                <!-- 2. Bedrooms -->
-                <div class="card" onclick="openDetailModal('4 Bedrooms', 'assets/08.jpg', '4 large spacious AC bedrooms with attached western bathrooms, premium wooden flooring, and capacity for up to 20 guests.')">
-                    <div class="icon">🛏</div>
-                    <h3>4 Bedrooms</h3>
-                    <p>Comfortable private sleeping spaces for your group.</p>
-                </div>
+                <!-- ALL CARDS -->
+                <div class="cards">
 
-                <!-- 3. Nearby Sightseeing -->
-                <div class="card" onclick="openDetailModal('Nearby Sightseeing', 'assets/NS1.jpeg', 'Close to top Lonavala attractions including Tungarli Dam, Bhushi Dam, Tiger Point, Rajmachi Point, and Della Adventure Park.')">
-                    <div class="icon">🗺️</div>
-                    <h3>Nearby Sightseeing</h3>
-                    <p>Discover Lonavala’s best spots nearby.</p>
-                </div>
+                    <!-- 1. Swimming Pool -->
+                    <div class="card" onclick="openDetailModal('Swimming Pool & Jacuzzi', 'assets/13.jpeg', 'Private swimming pool featuring a shallow Kids Pool Tub, Jacuzzi setup, and comfortable poolside seating area for group leisure.')">
+                        <div class="icon">🏊</div>
+                        <h3>Swimming Pool</h3>
+                        <p>Private pool & kids tub.</p>
+                    </div>
 
-                <!-- 4. BBQ Area -->
-                <div class="card" onclick="openDetailModal('BBQ & Bonfire', 'assets/bbq.webp', 'Easy-to-use Barbeque setup for delicious grilled food along with a dedicated outdoor bonfire setup area for chilly evenings.')">
-                    <div class="icon">🔥</div>
-                    <h3>BBQ Area</h3>
-                    <p>Enjoy outdoor BBQ moments with your group.</p>
-                </div>
+                    <!-- 2. Bedrooms -->
+                    <div class="card" onclick="openDetailModal('4 Bedrooms', 'assets/08.jpg', '4 large spacious AC bedrooms with attached western bathrooms, premium wooden flooring, and capacity for up to 20 guests.')">
+                        <div class="icon">🛏</div>
+                        <h3>4 Bedrooms</h3>
+                        <p>Comfortable private sleeping spaces for your group.</p>
+                    </div>
 
-                <!-- 5. Indoor Games -->
-                <div class="card" onclick="openDetailModal('Indoor Games', 'assets/games.jpg', 'Equipped with a full-size Pool Table, Carrom, Chess Board, Cards, Table Tennis, and outdoor team activity options.')">
-                    <div class="icon">🎮</div>
-                    <h3>Indoor Games</h3>
-                    <p>Fun options for friends and family.</p>
-                </div>
+                    <!-- 3. Nearby Sightseeing -->
+                    <div class="card" onclick="openDetailModal('Nearby Sightseeing', 'assets/NS1.jpeg', 'Close to top Lonavala attractions including Tungarli Dam, Bhushi Dam, Tiger Point, Rajmachi Point, and Della Adventure Park.')">
+                        <div class="icon">🗺️</div>
+                        <h3>Nearby Sightseeing</h3>
+                        <p>Discover Lonavala’s best spots nearby.</p>
+                    </div>
 
-                <!-- 6. Smart TV -->
-                <div class="card" onclick="openDetailModal('55 Smart TV', 'assets/TV.jpeg', '55 inch Smart LED TV in the main area with active Netflix subscription and OTT recharge for movie nights.')">
-                    <div class="icon">📺</div>
-                    <h3>Smart TV</h3>
-                    <p>Relax with entertainment after a day out.</p>
-                </div>
+                    <!-- 4. BBQ Area -->
+                    <div class="card" onclick="openDetailModal('BBQ & Bonfire', 'assets/bbq.webp', 'Easy-to-use Barbeque setup for delicious grilled food along with a dedicated outdoor bonfire setup area for chilly evenings.')">
+                        <div class="icon">🔥</div>
+                        <h3>BBQ Area</h3>
+                        <p>Enjoy outdoor BBQ moments with your group.</p>
+                    </div>
 
-                <!-- 7. Wi-Fi -->
-                <div class="card" onclick="openDetailModal('High Speed Wi-Fi', 'assets/wifi1.jpeg', 'Uninterrupted 100+ Mbps high-speed internet access available across all bedrooms and hall areas.')">
-                    <div class="icon">📶</div>
-                    <h3>Wi-Fi</h3>
-                    <p>Stay connected when you need to.</p>
-                </div>
+                    <!-- 5. Indoor Games -->
+                    <div class="card" onclick="openDetailModal('Indoor Games', 'assets/games.jpg', 'Equipped with a full-size Pool Table, Carrom, Chess Board, Cards, Table Tennis, and outdoor team activity options.')">
+                        <div class="icon">🎮</div>
+                        <h3>Indoor Games</h3>
+                        <p>Fun options for friends and family.</p>
+                    </div>
 
-                <!-- 8. Parking -->
-                <div class="card" onclick="openDetailModal('Private Parking', 'assets/parking1.jpeg', 'Secure on-property parking space capable of fitting 3+ light motor vehicles with EV charging facility.')">
-                    <div class="icon">🚗</div>
-                    <h3>Parking</h3>
-                    <p>Convenient on-property parking space.</p>
-                </div>
+                    <!-- 6. Smart TV -->
+                    <div class="card" onclick="openDetailModal('55 Smart TV', 'assets/TV.jpeg', '55 inch Smart LED TV in the main area with active Netflix subscription and OTT recharge for movie nights.')">
+                        <div class="icon">📺</div>
+                        <h3>Smart TV</h3>
+                        <p>Relax with entertainment after a day out.</p>
+                    </div>
 
-                <!-- 9. Garden -->
-                <div class="card" onclick="openDetailModal('Garden & Swing', 'assets/green.jpeg', 'Lush green surroundings with outdoor seating, a traditional hanging swing (Jhula), and a Pop-Up Gazebo Tent.')">
-                    <div class="icon">🌿</div>
-                    <h3>Garden</h3>
-                    <p>Green outdoor surroundings for slow mornings.</p>
-                </div>
+                    <!-- 7. Wi-Fi -->
+                    <div class="card" onclick="openDetailModal('High Speed Wi-Fi', 'assets/wifi1.jpeg', 'Uninterrupted 100+ Mbps high-speed internet access available across all bedrooms and hall areas.')">
+                        <div class="icon">📶</div>
+                        <h3>Wi-Fi</h3>
+                        <p>Stay connected when you need to.</p>
+                    </div>
 
-                <!-- 10. Music -->
-                <div class="card" onclick="openDetailModal('Bluetooth Music System', 'assets/sound.jpeg', 'High-power Bluetooth speaker with microphone and DJ music options to celebrate events and get-togethers.')">
-                    <div class="icon">🎵</div>
-                    <h3>Music</h3>
-                    <p>Set the mood for celebrations and get-togethers.</p>
-                </div>
+                    <!-- 8. Parking -->
+                    <div class="card" onclick="openDetailModal('Private Parking', 'assets/parking1.jpeg', 'Secure on-property parking space capable of fitting 3+ light motor vehicles with EV charging facility.')">
+                        <div class="icon">🚗</div>
+                        <h3>Parking</h3>
+                        <p>Convenient on-property parking space.</p>
+                    </div>
 
-                <!-- 11. Kitchen -->
-                <div class="card" onclick="openDetailModal('Furnished Kitchen', 'assets/DSC05203.jpg', 'Fully equipped big kitchen space with Refrigerator, Aquaguard water purifier, and basic cooking essentials.')">
-                    <div class="icon">🍳</div>
-                    <h3>Kitchen</h3>
-                    <p>Useful kitchen setup for group stays.</p>
-                </div>
+                    <!-- 9. Garden -->
+                    <div class="card" onclick="openDetailModal('Garden & Swing', 'assets/green.jpeg', 'Lush green surroundings with outdoor seating, a traditional hanging swing (Jhula), and a Pop-Up Gazebo Tent.')">
+                        <div class="icon">🌿</div>
+                        <h3>Garden</h3>
+                        <p>Green outdoor surroundings for slow mornings.</p>
+                    </div>
 
-                <!-- 12. Green Views -->
-                <div class="card" onclick="openDetailModal('Green Views & Terrace', 'assets/green view.jpeg', 'Enjoy picturesque valley and mountain views from the private open terrace and balcony spaces.')">
-                    <div class="icon">🌄</div>
-                    <h3>Green Views</h3>
-                    <p>Enjoy the lush hills and peaceful surroundings.</p>
-                </div>
+                    <!-- 10. Music -->
+                    <div class="card" onclick="openDetailModal('Bluetooth Music System', 'assets/sound.jpeg', 'High-power Bluetooth speaker with microphone and DJ music options to celebrate events and get-togethers.')">
+                        <div class="icon">🎵</div>
+                        <h3>Music</h3>
+                        <p>Set the mood for celebrations and get-togethers.</p>
+                    </div>
 
+                    <!-- 11. Kitchen -->
+                    <div class="card" onclick="openDetailModal('Furnished Kitchen', 'assets/DSC05203.jpg', 'Fully equipped big kitchen space with Refrigerator, Aquaguard water purifier, and basic cooking essentials.')">
+                        <div class="icon">🍳</div>
+                        <h3>Kitchen</h3>
+                        <p>Useful kitchen setup for group stays.</p>
+                    </div>
+
+                    <!-- 12. Green Views -->
+                    <div class="card" onclick="openDetailModal('Green Views & Terrace', 'assets/green view.jpeg', 'Enjoy picturesque valley and mountain views from the private open terrace and balcony spaces.')">
+                        <div class="icon">🌄</div>
+                        <h3>Green Views</h3>
+                        <p>Enjoy the lush hills and peaceful surroundings.</p>
+                    </div>
+
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+    </main>
 
     <!-- POPUP MODAL -->
     <div id="detailModal" onclick="closeDetailModal()">
@@ -245,6 +249,7 @@
                 <p style="margin-top:10px">+91 97676 87687</p>
             </div>
         </div>
+
         <div class="container copyright">
             © 2026 Sunrise Serenity Haven. Designed & Developed by Ayan Tamboli
         </div>
@@ -256,7 +261,7 @@
             document.getElementById('modalTitle').innerText = title;
             document.getElementById('modalImg').src = imageSrc;
             document.getElementById('modalInfo').innerText = infoText;
-            
+
             document.getElementById('detailModal').style.display = 'flex';
         }
 
@@ -267,3 +272,4 @@
 
 </body>
 </html>
+
