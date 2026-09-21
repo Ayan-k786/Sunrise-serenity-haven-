@@ -823,5 +823,23 @@ img {
         margin-top: 5px;
     }
 }
+@media (max-width: 768px) {
+    .menu {
+        background: #ffffff !important;
+    }
+
+    .menu a {
+        color: #000000 !important;
+    }
+
+    .menu a:hover,
+    .menu a.active {
+        color: #000000 !important;
+    }
+
+    .menu .btn {
+        color: #ffffff !important;
+    }
+}
 
 
