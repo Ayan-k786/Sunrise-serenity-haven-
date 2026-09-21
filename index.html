@@ -33,7 +33,7 @@
                  <img src="assets/logo.png"
                          alt="Sunrise Serenity Haven">
                 </a>
-
+                <button class="menu-toggle" onclick="toggleMenu()">☰</button>
                 <div class="menu">
                     <a href="index.html" class="active">Home</a>
                     <a href="about.html">About</a>
@@ -360,6 +360,10 @@
 
 
     <script src="script.js"></script>
-
+<script>
+function toggleMenu() {
+    document.querySelector('.menu').classList.toggle('show');
+}
+</script>
 </body>
 </html>
